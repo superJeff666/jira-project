@@ -35,3 +35,19 @@ export const useDebounce = <V>(value: V, delay?: number) => {
 
   return debouncedValue;
 };
+
+// 自定义Array hook, 实现数组的增加，删除某项以及删除所有项
+// export const useArray = <T>(initialArray:T[]) => {
+//   const [value, setValue] = useState(initialArray);
+//   return {
+//     value,
+//     setValue,
+//     add: (item:T) => setValue([...value, item]),
+//     clear: () => setValue([]),
+//     removeIndex: (index:number) => {
+//       const copy = [...value];
+//       copy.splice(index,1);
+//       setValue(copy)
+//     }
+//   }
+// }
