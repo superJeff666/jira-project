@@ -10,7 +10,7 @@ export const LoginScreen = ({
   onError: (error: Error) => void;
 }) => {
   const { login } = useAuth();
-  const { run, isLoading, error } = useAsync(undefined, { throwOnError: true });
+  const { run, isLoading } = useAsync(undefined, { throwOnError: true });
   // HTMLFormElement extends Element
   const handleSubmit = async (values: {
     username: string;

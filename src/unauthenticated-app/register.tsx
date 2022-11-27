@@ -9,7 +9,7 @@ export const RegisterScreen = ({
 }: {
   onError: (error: Error) => void;
 }) => {
-  const { register, user } = useAuth();
+  const { register } = useAuth();
   const { run, isLoading } = useAsync(undefined, { throwOnError: true });
   // HTMLFormElement extends Element
   const handleSubmit = async ({
