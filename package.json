@@ -57,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "@welldone-software/why-did-you-render": "^7.0.1",
     "eslint-config-prettier": "^8.5.0",
     "husky": ">=6",
     "json-server": "^0.17.0",
